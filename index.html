@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" id="meta-desc" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="pixel-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a href="#landing" class="logo pixel-border-sm" id="brand-logo">Hilda</a>
+      <button type="button" class="nav-toggle pixel-border-sm" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">打开菜单</span>
+      </button>
+      <nav id="site-nav" class="site-nav pixel-border">
+        <a href="#about">关于我</a>
+        <a href="#journey">核心经历</a>
+        <a href="#skills">能力概览</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 首页 -->
+      <section id="landing" class="section landing">
+        <div class="landing-inner">
+          <p class="landing-kicker pixel-label">RESUME & PORTFOLIO</p>
+          <h1 class="landing-title">
+            <span id="typewriter">
+              <span class="landing-title__name">你好，</span>
+              <span class="landing-title__work">我是Hilda</span>
+            </span>
+          </h1>
+          <p class="landing-sub" id="landing-sub"></p>
+          <div class="landing-cta" id="landing-cta"></div>
+          <p class="landing-hint">向下查看经历与项目 ↓</p>
+        </div>
+        <aside class="landing-summary pixel-border" aria-label="个人信息概览">
+          <p class="landing-summary__label">PROFILE</p>
+          <div class="landing-summary__item">
+            <strong>2027 届硕士</strong>
+            <span>华东师范大学 · 心理学</span>
+          </div>
+          <div class="landing-summary__item">
+            <strong>2 段 AI 产品实习</strong>
+            <span>To B 数字员工 · To C Agent / Skill</span>
+          </div>
+          <div class="landing-summary__item">
+            <strong>AI 应用项目</strong>
+            <span>Agent · 虚拟人 · 快速原型</span>
+          </div>
+        </aside>
+      </section>
+
+      <!-- 关于我 -->
+      <section id="about" class="section about">
+        <h2 class="section-title pixel-border-inline"><span id="about-title"></span></h2>
+        <div class="about-text card-pixel">
+          <p class="about-name" id="about-name"></p>
+          <p id="about-intro"></p>
+          <div class="about-edu pixel-border-sm" id="about-edu" aria-label="教育经历"></div>
+          <blockquote class="about-why pixel-border-sm">
+            <span class="why-label">职业方向</span>
+            <p id="about-why"></p>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- 经历与项目（时间线） -->
+      <section id="journey" class="section journey">
+        <h2 class="section-title pixel-border-inline">核心经历与代表项目</h2>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <!-- 本科项目与技术实践 -->
+      <section id="early-work" class="section early-work">
+        <h2 class="section-title pixel-border-inline">本科项目与技术实践</h2>
+        <div class="early-work-grid" id="early-work-grid"></div>
+      </section>
+
+      <!-- 技能地图 -->
+      <section id="skills" class="section skills">
+        <h2 class="section-title pixel-border-inline" id="skills-title"></h2>
+        <div class="skill-map" id="skill-map"></div>
+      </section>
+
+      <!-- 联系 -->
+      <section id="contact" class="section contact">
+        <h2 class="section-title pixel-border-inline" id="contact-title"></h2>
+        <div class="contact-card card-pixel pixel-border">
+          <p id="contact-note" class="contact-note"></p>
+          <div class="contact-actions">
+            <div class="email-row">
+              <a class="email-link pixel-border-sm" id="email-link" href="#"></a>
+              <button type="button" class="btn-pixel copy-btn" id="copy-email" data-copied="已复制">
+                复制邮箱
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Hilda · AI 产品作品集</span>
+    </footer>
+
+
+    <script src="data/content.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
