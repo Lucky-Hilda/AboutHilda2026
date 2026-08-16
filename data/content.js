@@ -130,7 +130,7 @@ window.SITE_CONTENT = {
     {
       id: "ai-counselor",
       kind: "研究项目",
-      time: "2025年03月",
+      time: "2025年03月 - 2026年03月",
       title: "AI 虚拟人心理咨询助手",
       role: "产品设计与开发",
       summary:
@@ -338,3 +338,4 @@ window.SITE_CONTENT = {
     note: "求职方向：AI 产品经理。欢迎通过邮件联系。",
   },
 };
+
