@@ -111,7 +111,7 @@
     toggle.type = "button";
     toggle.className = "project-toggle";
     toggle.setAttribute("aria-expanded", "false");
-    toggle.textContent = "查看项目复盘 ▼";
+    toggle.textContent = "查看产品复盘 ▼";
 
     const wrap = document.createElement("div");
     wrap.className = "project-expand";
@@ -119,9 +119,9 @@
     inner.className = "project-expand-inner";
     inner.innerHTML =
       '<div class="expand-blocks">' +
-      blockHtml("项目判断", exp.thinking) +
-      blockHtml("关键难点", exp.problems) +
-      blockHtml("后续优化", exp.iteration) +
+      blockHtml("核心问题与产品判断", exp.thinking) +
+      blockHtml("方案拆解与能力边界", exp.problems) +
+      blockHtml("验证方法与后续迭代", exp.iteration) +
       "</div>";
     wrap.appendChild(inner);
 
@@ -129,7 +129,7 @@
       const open = !wrap.classList.contains("is-open");
       wrap.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", open);
-      toggle.textContent = open ? "收起项目复盘 ▲" : "查看项目复盘 ▼";
+      toggle.textContent = open ? "收起产品复盘 ▲" : "查看产品复盘 ▼";
     });
 
     body.appendChild(toggle);
